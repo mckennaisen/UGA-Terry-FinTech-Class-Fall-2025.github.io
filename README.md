@@ -8,8 +8,18 @@ This is the class website and dynamic roster, which is intended to introduce stu
 
 Students add themselves to this roster by:
 1. creating a new file in `_students/` called {your-name},
-2. copying the template into the new file, and
-3. updating the template with your information.
+2. copying the template into the new file,
+3. updating the template with your information,
+4. Click **Commit changes** and choose **Create a new branch**.  
+5. Click **Propose changes** → **Open pull request**.  
+6. That’s it! We’ll review and merge. Your bio will appear in the roster after we merge your PR into the existing files.
+
+### Tips
+- **File name** must start with `_students/` and end with `.md`.  
+- Keep it short & professional.  
+- Optional: set `headshot` to an image URL, such as https://github.com/username.png.  (A square works best).
+- Optional: Use AI to generate a professional headshot.
+
 
 <table>
 <tr>
@@ -19,6 +29,7 @@ Students add themselves to this roster by:
 <tr>
 <td>
 <pre>
+---
 name: your-name
 github: github-username
 major: your-major
@@ -26,12 +37,13 @@ year: your-year
 email: your-email-address
 interests: ["interest 1", "interest 2", "interest 3"]
 headshot: "https://github.com/username.png"
-
+---
 describe-yourself-here
 </pre>
 </td>
 <td>
 <pre>
+---
 name: Rex VanHorn
 github: rexyo
 major: Finance
@@ -39,7 +51,7 @@ year: 4
 email: rex@example.edu
 interests: ["fintech", "ai", "payments"]
 headshot: "https://github.com/RexVH.png"
-
+---
 I'm interested in GenAI for FinTech, college football, and working as little as possible.
 </pre>
 </td>
@@ -50,4 +62,4 @@ I'm interested in GenAI for FinTech, college football, and working as little as 
 - Live site: https://uga-terry-fintech-class-fall-2025.github.io
 - Add yourself: Create a file like `_students/first-last.md` and paste the template.
 
-## Student template (copy/paste into your file)
+
