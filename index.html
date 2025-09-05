@@ -24,6 +24,7 @@
   <h1>{{ site.title }}</h1>
   <p class="muted">{{ site.description }}</p>
 
+<!--
   <div class="card">
     <h2>How to add yourself (students)</h2>
     <ol>
@@ -31,9 +32,10 @@
       <li>Name it like <code>_students/first-last.md</code> (use dashes, all lowercase).</li>
       <li>Paste the template from this page (scroll down) and fill in your details.</li>
       <li>Click <strong>Commit changes</strong> (create a new branch) → <strong>Propose changes</strong> → <strong>Open pull request</strong>.</li>
-      <li>Wait for approval. Your name will appear below after it’s merged.</li>
+      <li>Wait for approval. Your name will appear below after it's merged.</li>
     </ol>
   </div>
+-->
 
   <h2>Class Roster</h2>
   {% assign roster = site.students | sort: "name" %}
@@ -68,7 +70,7 @@ interests: ["fintech", "ai", "payments"]
 headshot: ""   # optional image URL (can be a GitHub avatar URL)
 ---
 
-Write 2–4 sentences about yourself. Courses, interests, goals — keep it simple!
+Write 2-4 sentences about yourself. Courses, interests, goals — keep it simple!
   </pre>
 </body>
 </html>

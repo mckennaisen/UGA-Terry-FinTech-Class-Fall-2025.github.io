@@ -45,11 +45,11 @@ describe-yourself-here
 <pre>
 ---
 name: Rex VanHorn
-github: rexyo
+github: RexVH
 major: Finance
 year: 4
-email: rex@example.edu
-interests: ["fintech", "ai", "payments"]
+email: rex.vanhorn@uga.edu
+interests: ["FinTech", "AI", "College Football"]
 headshot: "https://github.com/RexVH.png"
 ---
 I'm interested in GenAI for FinTech, college football, and working as little as possible.
