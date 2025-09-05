@@ -7,15 +7,15 @@ This is the class website and dynamic roster, which is intended to introduce stu
 
 
 Students add themselves to this roster by:
-1. creating a new file in `_students/` called {your-name},
-2. copying the template into the new file,
+1. creating a new file in `_students/` called {your-name.md},
+2. copying the template text from /templates/bio-template.md (or below) into the new file,
 3. updating the template with your information,
-4. Click **Commit changes** and choose **Create a new branch**.  
-5. Click **Propose changes** → **Open pull request**.  
-6. That’s it! We’ll review and merge. Your bio will appear in the roster after we merge your PR into the existing files.
+4. commit the change (in GitHub, click **Commit changes** and choose **Create a new branch**),  
+5. submit a pull request ( in GitHub click **Propose changes** → **Open pull request**),  
+6. That’s it! We’ll review and merge. Your bio will appear in the roster *after* we merge your PR into the repository.
 
 ### Tips
-- **File name** must start with `_students/` and end with `.md`.  
+- Your new **file name** must start with `_students/` and end with `.md`.  
 - Keep it short & professional.  
 - Optional: set `headshot` to an image URL, such as https://github.com/username.png.  (A square works best).
 - Optional: Use AI to generate a professional headshot. Simply give ChatGPT, or similar, a picture of you and ask it to generate the professional headshot. You can upload your new, professional headshot to the <i>images</i> folder, and display your picture by changing the headshot: variable to <i>"images/image-name.png"</i>.
