@@ -11,8 +11,9 @@ Students add themselves to this roster by:
 2. copying the template text from /templates/bio-template.md (or below) into the new file,
 3. updating the template with your information,
 4. commit the change (in GitHub, click **Commit changes** and choose **Create a new branch**),  
-5. submit a pull request ( in GitHub click **Propose changes** → **Open pull request**),  
-6. That’s it! We’ll review and merge. Your bio will appear in the roster *after* we merge your PR into the repository.
+5. submit a pull request ( in GitHub click **Propose changes** → **Open pull request**). 
+
+That’s it! We’ll review and merge. Your bio will appear in the roster *after* we merge your PR into the repository.
 
 ### Tips
 - Your new **file name** must start with `_students/` and end with `.md`.  
