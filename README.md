@@ -12,9 +12,9 @@ Students add themselves to this roster by:
 3. updating the template with your information.
 
 | Template | Rex's Example |
-|----------|----------|
+|----------|-------------- |
 | 
----
+
 name: your-name
 github: github-username
 major: your-major
@@ -26,7 +26,6 @@ headshot: "https://github.com/<username>.png"
 describe-yourself-here
 | 
 
----
 name: Rex VanHorn
 github: rexyo
 major: Finance
