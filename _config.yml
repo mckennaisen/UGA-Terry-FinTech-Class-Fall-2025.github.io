@@ -1,5 +1,5 @@
 title: UGA Terry FinTech - Fall 2025
-description: Class site and student roster
+description: This site demonstrates the how Git and GitHub can be used to kick off a CI/CD pipeline to update a class roster in real-time. Go to https://github.com/UGA-Terry-FinTech-Class-Fall-2025/UGA-Terry-FinTech-Class-Fall-2025.github.io for instructions for updating this roster.
 theme: jekyll-theme-primer
 
 # Jekyll "collection" for students
