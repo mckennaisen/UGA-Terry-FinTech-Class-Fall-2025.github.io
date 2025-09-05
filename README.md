@@ -11,31 +11,40 @@ Students add themselves to this roster by:
 2. copying the template into the new file, and
 3. updating the template with your information.
 
-| Template | Rex's Example |
-|----------|-------------- |
-| 
-
+<table>
+<tr>
+<th>Template</th>
+<th>Rex's Example</th>
+</tr>
+<tr>
+<td>
+<pre>
 name: your-name
 github: github-username
 major: your-major
 year: your-year
 email: your-email-address
-interests: ["interest 1", "interest 2", "interest 3"] <!-- Array of interests -->
-headshot: "https://github.com/<username>.png"
+interests: ["interest 1", "interest 2", "interest 3"]
+headshot: "https://github.com/username.png"
 
 describe-yourself-here
-| 
-
+</pre>
+</td>
+<td>
+<pre>
 name: Rex VanHorn
 github: rexyo
 major: Finance
 year: 4
 email: rex@example.edu
 interests: ["fintech", "ai", "payments"]
-headshot: ""
+headshot: "https://github.com/RexVH.png"
 
-I’m interested in GenAI for fintech, ML-driven risk scoring, and real-time payments.
-|
+I'm interested in GenAI for FinTech, college football, and working as little as possible.
+</pre>
+</td>
+</tr>
+</table>
 
 ## Quick links
 - Live site: https://uga-terry-fintech-class-fall-2025.github.io
