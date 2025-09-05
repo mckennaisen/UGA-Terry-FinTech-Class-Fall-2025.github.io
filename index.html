@@ -57,20 +57,34 @@
     {% endfor %}
   </div>
 
-  <h2>Student Page Template</h2>
-  <p class="muted">Copy everything between the lines below into your new file.</p>
-  <pre>---
-name: Your Name
-github: your-github-handle
-major: Your Major
-year: 1
-# Optional fields:
-email: you@uga.edu
-interests: ["fintech", "ai", "payments"]
-headshot: ""   # optional image URL (can be a GitHub avatar URL)
----
+  <h2>What just happened</h2>
+  <p class="muted">The class' GitHub page is 'rebuilt' from the files in the 
+    GitHub repository every time a new change is committed (and merged) into
+    the repository. The merge kicks off a CI/CD process which results in the 
+    automated rerending of this page (index.html) based on the repository's contents and 
+    configuration (_config.yml), which tells the CI/CD process how to display 
+    the roster, based on the files that exist in the <i>_students</i> folder.
 
-Write 2-4 sentences about yourself. Courses, interests, goals — keep it simple!
+    Note:
+    -- if you had editor access to the repository, you could edit this file (index.html) directly
+    and commit the changes, which would also kick off the CI/CD process to update the site.
+    -- as you don't (initially) have access, you need to create a "pull request" (PR) to get your changes
+    merged into the repository and kick off the CI/CD build process.
+  </p>
+  <!-- Hide the template with an HTML comment
+  <pre>
+    ---
+    name: Your Name
+    github: your-github-handle
+    major: Your Major
+    year: 1
+    # Optional fields:
+    email: you@uga.edu
+    interests: ["fintech", "ai", "payments"]
+    headshot: ""   # optional image URL (can be a GitHub avatar URL)
+    ---
+    Write 2-4 sentences about yourself. Courses, interests, goals — keep it simple!
   </pre>
+ -->
 </body>
 </html>

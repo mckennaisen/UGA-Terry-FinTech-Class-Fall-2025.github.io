@@ -18,7 +18,7 @@ Students add themselves to this roster by:
 - **File name** must start with `_students/` and end with `.md`.  
 - Keep it short & professional.  
 - Optional: set `headshot` to an image URL, such as https://github.com/username.png.  (A square works best).
-- Optional: Use AI to generate a professional headshot.
+- Optional: Use AI to generate a professional headshot. Simply give ChatGPT, or similar, a picture of you and ask it to generate the professional headshot. You can upload your new, professional headshot to the <i>images</i> folder, and display your picture by changing the headshot: variable to <i>"images/image-name.png"</i>.
 
 
 <table>
