@@ -6,7 +6,7 @@ theme: jekyll-theme-primer
 collections:
   students:
     output: true
-    permalink: /students/:name/
+    permalink: /_students/:name/
 
 # Default layout for all student pages
 defaults:
