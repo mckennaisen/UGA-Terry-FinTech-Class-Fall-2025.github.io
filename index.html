@@ -1,9 +1,73 @@
-<BODY>
-    <HEAD>
-        <TITLE>This webpage is for demonstration purposes only.</TITLE>
-    </HEAD>
-    <TABLE>
-        <TR><TD>Rex made the first edit.</TD></TR>
-        <TR><TD><a href="/rex/rex.html">Rex's personal page</a></TD></TR>
-    </TABLE>
-</BODY>
+---
+# front matter enables Jekyll on this HTML file
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; }
+    .muted { color: #666; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 1rem 1.25rem; margin: .75rem 0; }
+    .grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fill,minmax(250px,1fr)); }
+    .student { border: 1px solid #eee; border-radius: 12px; padding: .75rem; }
+    .student h3 { margin: 0 0 .5rem 0; font-size: 1.05rem; }
+    .pill { display: inline-block; padding: .15rem .5rem; border-radius: 999px; border: 1px solid #ddd; font-size: .85rem; margin-right: .25rem; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>{{ site.title }}</h1>
+  <p class="muted">{{ site.description }}</p>
+
+  <div class="card">
+    <h2>How to add yourself (students)</h2>
+    <ol>
+      <li>Click <strong>Add file → Create new file</strong>.</li>
+      <li>Name it like <code>_students/first-last.md</code> (use dashes, all lowercase).</li>
+      <li>Paste the template from this page (scroll down) and fill in your details.</li>
+      <li>Click <strong>Commit changes</strong> (create a new branch) → <strong>Propose changes</strong> → <strong>Open pull request</strong>.</li>
+      <li>Wait for approval. Your name will appear below after it’s merged.</li>
+    </ol>
+  </div>
+
+  <h2>Class Roster</h2>
+  {% assign roster = site.students | sort: "name" %}
+  <p class="muted">Total students: {{ roster | size }}</p>
+
+  <div class="grid">
+    {% for s in roster %}
+      <div class="student">
+        <h3><a href="{{ s.url | relative_url }}">{{ s.name }}</a></h3>
+        <p>
+          {% if s.github %}<span class="pill">@{{ s.github }}</span>{% endif %}
+          {% if s.major %}<span class="pill">{{ s.major }}</span>{% endif %}
+          {% if s.year %}<span class="pill">Year {{ s.year }}</span>{% endif %}
+        </p>
+        {% if s.interests %}
+          <p class="muted">Interests: {{ s.interests | join: ", " }}</p>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <h2>Student Page Template</h2>
+  <p class="muted">Copy everything between the lines below into your new file.</p>
+  <pre>---
+name: Your Name
+github: your-github-handle
+major: Your Major
+year: 1
+# Optional fields:
+email: you@uga.edu
+interests: ["fintech", "ai", "payments"]
+headshot: ""   # optional image URL (can be a GitHub avatar URL)
+---
+
+Write 2–4 sentences about yourself. Courses, interests, goals — keep it simple!
+  </pre>
+</body>
+</html>

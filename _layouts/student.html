@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.name }} – {{ site.title }}</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body { font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 2rem; max-width: 800px; }
+    .muted { color: #666; }
+    .row { display: flex; gap: 16px; align-items: center; }
+    img.avatar { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; border: 1px solid #eee; }
+    ul.info { list-style: none; padding: 0; margin: .5rem 0 0; }
+    ul.info li { margin: .1rem 0; }
+    a { text-decoration: none; }
+  </style>
+</head>
+<body>
+  <p><a href="{{ "/" | relative_url }}">← Back to roster</a></p>
+
+  <div class="row">
+    {% if page.headshot and page.headshot != "" %}
+      <img class="avatar" src="{{ page.headshot }}" alt="{{ page.name }} headshot">
+    {% endif %}
+    <div>
+      <h1>{{ page.name }}</h1>
+      <ul class="info">
+        {% if page.github %}<li>GitHub: <a href="https://github.com/{{ page.github }}">@{{ page.github }}</a></li>{% endif %}
+        {% if page.email %}<li>Email: <a href="mailto:{{ page.email }}">{{ page.email }}</a></li>{% endif %}
+        {% if page.major %}<li>Major: {{ page.major }}</li>{% endif %}
+        {% if page.year %}<li>Year: {{ page.year }}</li>{% endif %}
+        {% if page.interests %}<li>Interests: {{ page.interests | join: ", " }}</li>{% endif %}
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <section>
+    {{ content }}
+  </section>
+</body>
+</html>

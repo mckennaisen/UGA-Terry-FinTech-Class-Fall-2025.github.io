@@ -1,0 +1,17 @@
+title: UGA Terry FinTech - Fall 2025
+description: Class site and student roster
+theme: jekyll-theme-primer
+
+# Jekyll "collection" for students
+collections:
+  students:
+    output: true
+    permalink: /students/:name/
+
+# Default layout for all student pages
+defaults:
+  - scope:
+      path: ""
+      type: "students"
+    values:
+      layout: student
