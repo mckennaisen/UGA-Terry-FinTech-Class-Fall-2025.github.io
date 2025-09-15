@@ -8,6 +8,7 @@ This is the class website and dynamic roster, which is intended to introduce stu
 
 Students add themselves to this roster by:
 
+1. Fork this repository (click the **Fork** button in the upper right corner of this page),
 1. creating a new file in `_students/` called {your-name.md},
 1. copying the template text from /templates/bio-template.md (or below) into the new file,
 1. updating the template with your information,
