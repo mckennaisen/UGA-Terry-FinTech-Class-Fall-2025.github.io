@@ -1,0 +1,31 @@
+---
+name: Martin Marcher
+github: serverhorror
+major: I'm from Europe, we don't do major/minor
+year: π
+email: serverhorror@example.invalid
+interests: ["I", "have", "them"]
+headshot: "https://github.com/serverhorror.png"
+---
+
+# AdminSpotting
+
+```text
+Choose no life. Choose sysadminning. Choose no career.        *****
+Choose no family. Choose a fucking big computer, choose hard  *   *
+disks the size of washing machines, old cars, CD ROM writers  * A *
+and electrical coffee makers. Choose no sleep, high caffeine  * D *
+and mental insurance. Choose fixed interest car loans. Choose * M *
+a rented shoebox. Choose no friends. Choose black jeans and   * I *
+matching combat boots. Choose a swivel chair for your office  * N *
+in a range of fucking fabrics. Choose NNTP and wondering why  * S *
+the fuck you're logged on on a Sunday morning. Choose sitting * P *
+in that chair looking at mind-numbing, spirit-crushing web    * O *
+sites, stuffing fucking junk food into your mouth. Choose     * T *
+rotting away at the end of it all, pishing your last on some  * T *
+miserable newsgroup, nothing more than an embarrassment to    * I *
+the selfish, fucked up lusers Gates spawned to replace the    * N *
+computer-literate.                                            * G *
+Choose your future.                                           *   *
+Choose sysadmining[1].                                        *****
+```
